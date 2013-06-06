@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/portrait_game_entrance" />
+
+                <Button
+                    android:id="@+id/btn_portrait_game"
+                    style="@style/demo_btn"
+                    android:text="@string/click_go" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/landscape_game_entrance" />
+
+                <Button
+                    android:id="@+id/btn_landscape_game"
+                    style="@style/demo_btn"
+                    android:text="@string/click_go" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/portrait_show_all" />
+
+                <Button
+                    android:id="@+id/btn_portrait_show_all"
+                    style="@style/demo_btn"
+                    android:text="@string/show_all" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/landscape_show_all" />
+
+                <Button
+                    android:id="@+id/btn_landscape_show_all"
+                    style="@style/demo_btn"
+                    android:text="@string/show_all" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

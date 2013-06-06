@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="demo_app_name">支付SDK测试</string>
+    <string name="welcome_page">欢迎界面</string>
+    <string name="user_page">正式用户界面</string>
+    <string name="guest_page">试玩游客界面</string>
+    <string name="portrait_game_entrance">竖屏演示入口\n欢迎界面\n试玩游客界面\n正式用户界面</string>
+    <string name="landscape_game_entrance">横屏演示入口\n欢迎界面\n试玩游客界面\n正式用户界面</string>
+    <string name="portrait_show_all">竖屏全部接口</string>
+    <string name="landscape_show_all">横屏全部接口</string>
+    <string name="click_go">进入\n演示界面</string>
+    <string name="show_all">查看\n全部接口</string>
+    <!-- SdkUserActivity -->
+    <string name="sdk_ver">SDK版本:</string>
+    <string name="channel">渠道:</string>
+    <string name="uninitiated">未初始化</string>
+    <string name="nologin">正式账号状态:未登录</string>
+    <string name="notry">试玩账号状态:未进入</string>
+    <string name="formal_account">正式：\n</string>
+    <string name="try_account">试玩:\n</string>
+    <!-- 登录 -->
+    <string name="login_bg_visible">登录(不透明)</string>
+    <string name="login_bg_transparent">登录(透明)</string>
+    <string name="login">登录</string>
+    <!-- 切换账号 -->
+    <string name="switch_account_bg_visible">切换账号\n(不透明)</string>
+    <string name="switch_account_bg_transparent">切换账号\n(透明)</string>
+    <string name="switch_account">切换账号</string>
+    <!-- 快速游戏 -->
+    <string name="quick_play">快速游戏</string>
+    <!-- 试玩 -->
+    <string name="try_play">试玩</string>
+    
+    <string name="quick_or_try_play_fail">快速游戏或试玩失败</string>
+    
+    <!-- 试玩注册 -->
+    <string name="try_account_register_bg_visible">试玩注册\n(不透明)</string>
+    <string name="try_account_register_bg_transparent">试玩注册\n(透明)</string>
+    <string name="try_account_register">试玩注册</string>
+    <string name="try_account_useless">试玩账号不可用</string>
+    
+    <!-- 支付 -->
+    <string name="fixed_pay">定额支付</string>
+    <string name="not_fixed_pay">不定额支付</string>
+    <string name="fixed_pay_portrait">定额</string>
+    <!-- <string name="not_fixed_pay">不定额</string> -->
+    <string name="pay_callback_toast" formatted="false">状态码:%d, 状态描述：%s</string>
+    
+    <!-- 退出游戏 -->
+    <string name="quit_game">退出游戏</string>
+    <string name="quit">退出</string>
+    <string name="flow_test">流程测试</string>
+
+    <!-- FlowTestLoginActivity -->
+    <string name="response_type">response type:\n(read-only)</string>
+
+    <!-- FlowTestPayActivity 360身份相关 -->
+    <string name="access_token">access token:</string>
+    <string name="qihoo_user_id">qihoo user id:</string>
+    <string name="app_key">app key:</string>
+    <string name="private_key">private key:</string>
+    <string name="app_channel">app channel:</string>
+
+    <!-- FlowTestPayActivity 数额 -->
+    <string name="amount">money amount:</string>
+    <string name="exchange_rate">exchange rate:</string>
+
+    <!-- FlowTestPayActivity 应用、产品相关 -->
+    <string name="app_name">app name:</string>
+    <string name="app_user_name">app user name:</string>
+    <string name="app_user_id">app user id:</string>
+    <string name="product_name">product name:</string>
+    <string name="product_id">product id:</string>
+
+    <!-- FlowTestPayActivity 结果通知回调URI -->
+    <string name="notify_uri">notify uri:</string>
+
+    <!-- FlowTestPayActivity 应用、产品的其他可选参数 -->
+    <string name="app_ext_1">app ext 1:</string>
+    <string name="app_ext_2">app ext 2:</string>
+    <string name="app_order_id">app order id:</string>
+
+    <!-- FlowTestPayActivity 支付按钮text -->
+    <string name="pay">支付</string>
+
+    <!-- Demo QihooPayInfo -->
+    <string name="demo_pay_app_name">降魔神话</string>
+    <string name="demo_pay_app_user_name">应用内用户名称</string>
+    <string name="demo_pay_product_name">元宝</string>
+    <string name="demo_pay_app_ext1">abc</string>
+    <string name="demo_pay_app_ext2">def</string>
+
+    <!-- 提示用户信息 -->
+    <string name="get_token_title">获取Access Token</string>
+    <string name="get_token_message">正在请求应用服务器,请稍候……</string>
+    <string name="get_user_title">获取Qihoo UserInfo</string>
+    <string name="get_user_message">正在请求应用服务器,请稍候……</string>
+    <string name="get_code_fail">从登录注册、切换账号、试玩注册界面返回，未获取Authorization Code</string>
+    <string name="get_token_fail">未从应用服务器获取Access Token</string>
+    <string name="get_user_fail">未从应用服务器获取Qihoo UserInfo</string>
+    <string name="back_from_pay">从支付界面返回，请访问您的应用服务器查询结果</string>
+
+    <!-- 实名注册和防沉迷 -->
+    <string name="real_name_reg_tip">防沉迷查询</string>
+    <string name="real_name_reg">实名注册</string>
+    <string name="real_name_reg_bg_transparent_tip">实名注册\n(透明)</string>
+    <string name="real_name_reg_bg_visible_tip">实名注册\n(不透明)</string>
+    <string name="anti_addiction_query">防沉迷查询</string>
+    <string name="anti_addiction_query_result_0">查询结果:无此用户数据</string>
+    <string name="anti_addiction_query_result_1">查询结果:未成年</string>
+    <string name="anti_addiction_query_result_2">查询结果:已成年</string>
+    <string name="anti_addiction_query_exception">查询出现异常</string>
+
+    <!-- 开发环境自检查 -->
+    <string name="env_self_check">SDK环境自检</string>
+    <string name="self_check">自检</string>
+    <!-- 获取out包信息 -->
+    <string name="get_out_sdk_info">获取SDK信息</string>
+    <string name="get_info">获取信息</string>
+    <string name="bbs_btn">进入论坛</string>
+    <string name="bbs_label">论坛</string>
+    <string name="io_exception">请求失败，请稍后再试～</string>
+    <string name="time_out_exception">请求超时，请稍后再试～</string>
+    <string name="ssl_exception">连接服务器失败，请正确设置手机日期后重试</string>
+
+    <!-- 游戏退出提示 -->
+    <string name="game_exit_title">退出提示</string>
+    <string name="game_exit_msg">确定退出游戏？</string>
+    <string name="game_exit_ok">确定</string>
+    <string name="game_exit_cancel">取消</string>
+    
+		<string name="qh2013001t">银行卡支付业务客户服务协议</string>
+		<string name="qh2013002t">0</string>
+</resources>

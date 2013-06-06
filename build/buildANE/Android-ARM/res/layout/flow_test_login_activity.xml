@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/flow_test_pay_border_layout" >
+
+        <LinearLayout style="@style/flow_test_pay_layout" >
+
+            <TextView
+                style="@style/flow_test_pay_textview"
+                android:text="@string/app_key" />
+
+            <EditText
+                android:id="@+id/value_app_key"
+                style="@style/flow_test_pay_edittext"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/flow_test_pay_layout" >
+
+            <TextView
+                style="@style/flow_test_pay_textview"
+                android:text="@string/app_channel" />
+
+            <EditText
+                android:id="@+id/value_app_channel"
+                style="@style/flow_test_pay_edittext"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/demo_btn"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login" />
+
+</LinearLayout>

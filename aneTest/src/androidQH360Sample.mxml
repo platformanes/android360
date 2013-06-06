@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   width="462" applicationComplete="handler_appComp(event)">
+	<fx:Style source="androidQH360Sample.css"/>
+	<fx:Script>
+		<![CDATA[
+			import com.qh360.ane.Qh360Extension;
+			
+			import mx.events.FlexEvent;
+			import mx.utils.ObjectUtil;
+			
+			private var isLang:Boolean = false;
+			private function handler_status($evt:StatusEvent):void
+			{
+				showInfo('------------------');
+				showInfo('handler_status');
+				showInfo('level:', $evt.level, ',code:', $evt.code);
+				showInfo('------------------');
+			}
+			
+			protected function handler_appComp($evt:FlexEvent):void 
+			{
+				Qh360Extension.getInstance().addEventListener(StatusEvent.STATUS,handler_status);
+			}
+			
+			protected function handler_getStorageBTNclick($evt:MouseEvent):void
+			{
+				clearInfo();
+				showInfo('====================');
+				showInfo('====================');
+				showInfo('====================');
+			}
+			
+			
+			protected function handler_getSystemInfoBTNclick($evt:MouseEvent):void
+			{
+				clearInfo();
+				
+			}
+			
+			protected function handler_getPackageInfoBTNclick($evt:MouseEvent):void
+			{
+				showInfo('====================');
+				
+			}
+			
+			
+			private function showInfo(...$args):void
+			{
+				var __info:String = '';
+				for (var i:int = 0; i < $args.length; i++) 
+				{
+					__info += $args[i] + File.lineEnding;
+				}
+				infoTA.appendText(__info);
+			}
+			
+			
+			
+			private function clearInfo():void
+			{
+				infoTA.text = '';
+			}
+			
+			
+			protected function sdk_handle(event:MouseEvent):void
+			{
+				var b:Button = event.currentTarget as Button;
+				switch(b.id)
+				{
+					case "initSDK":
+						 Qh360Extension.getInstance().Qh360Init(
+							 "100",
+							 "0",
+							 "10",
+							 "100",
+							 "1888",
+							 "http://sdbxapp.msdk.mobilem.360.cn/pay_callback.php",
+							 "http://sdbxapp.msdk.mobilem.360.cn/mobileSDK/api.php?type=get_token_by_code&debug=1&code=",
+							 "http://sdbxapp.msdk.mobilem.360.cn/mobileSDK/api.php?type=get_userinfo_by_token&debug=1&token=");
+						break;
+					
+					case "enterBBS":
+						Qh360Extension.getInstance().Qh360EnterBBS();
+						break;
+					
+					case "landscape":
+						isLang = false;
+						break;
+					
+					case "unLandscape":
+						isLang = true;
+						break;
+					
+					case "loginA":
+						Qh360Extension.getInstance().Qh360LogIn(isLang,true);
+						break;
+					
+					case "loginB":
+						Qh360Extension.getInstance().Qh360LogIn(isLang,false);
+						break;
+					
+					case "payA":
+						Qh360Extension.getInstance().Qh360Pay(true,"Rect","20130606");
+						break;
+					
+					case "payB":
+						Qh360Extension.getInstance().Qh360Pay(false,"Rect","20130606");
+						break;
+					
+					case "regeditA":
+						Qh360Extension.getInstance().Qh360RealNameReg(true);
+						break;
+					
+					case "regeditB":
+						Qh360Extension.getInstance().Qh360RealNameReg(false);
+						break;
+					
+					case "regeditC":
+						Qh360Extension.getInstance().Qh360TryAccountReg(true);
+						break;
+					
+					case "regeditD":
+						Qh360Extension.getInstance().Qh360TryAccountReg(false);
+						break;
+					
+					case "cuserA":
+						Qh360Extension.getInstance().Qh360SwitchAccount(true);
+						break;
+					
+					case "cuserB":
+						Qh360Extension.getInstance().Qh360SwitchAccount(false);
+						break;
+					
+					case "Anti":
+						Qh360Extension.getInstance().Qh360AntiAddiction();
+						break;
+					
+					case "quickPlay":
+						Qh360Extension.getInstance().Qh360QuickPlay();
+						break;
+					
+					case "tryPlay":
+						Qh360Extension.getInstance().Qh360TryPlay(false);
+						break;
+					
+					case "exitGame":
+						Qh360Extension.getInstance().Qh360ExitGame();
+						break;
+					
+				}
+			}
+			
+			
+			
+			private function exit():void
+			{
+				NativeApplication.nativeApplication.exit();   
+			}
+			
+		]]>
+	</fx:Script>
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	<s:states>
+		<s:State name="fun1State"/>
+	</s:states>
+	<s:HGroup width="100%" horizontalAlign="center">
+		<s:Label id="qh360" width="406" height="41" color="#6A13ED" fontFamily="Arial" fontWeight="bold"
+				 text="360 ANE" textAlign="center" verticalAlign="middle"/>
+	</s:HGroup>
+	
+	<s:TileGroup includeIn="fun1State" width="100%" height="638">
+		<s:Button id="initSDK" y="12" width="225" height="27" label="初始化" click="sdk_handle(event)"
+				  fontFamily="_serif" fontSize="16" fontStyle="normal" fontWeight="bold"/>
+		<s:Button id="enterBBS" width="199" height="46" label="进入论坛" click="sdk_handle(event)"
+				  fontSize="16"/>
+		<s:Button id="landscape" label="竖 屏" click="sdk_handle(event)"/>
+		<s:Button id="unLandscape" label="横 屏" click="sdk_handle(event)"/>
+		<s:Button id="loginA" label="登录（透明）" click="sdk_handle(event)"/>
+		<s:Button id="loginB" label="登录（不透明）" click="sdk_handle(event)"/>
+		<s:Button id="payA" label="定额支付" click="sdk_handle(event)"/>
+		<s:Button id="payB" label="不定额支付" click="sdk_handle(event)"/>
+		<s:Button id="regeditA" label="实名注册（透明）" click="sdk_handle(event)"/>
+		<s:Button id="regeditB" label="实名注册（不透明）" click="sdk_handle(event)"/>
+		<s:Button id="regeditC" label="试玩注册（透明）" click="sdk_handle(event)"/>
+		<s:Button id="regeditD" label="试玩注册（不透明）" click="sdk_handle(event)"/>
+		<s:Button id="cuserA" width="207" label="切换帐号（透明）" click="sdk_handle(event)"/>
+		<s:Button id="cuserB" label="切换帐号（不透明）" click="sdk_handle(event)"/>
+		<s:Button id="Anti" label="防沉迷查询" click="sdk_handle(event)"/>
+		<s:Button id="quickPlay" label="快速游戏" click="sdk_handle(event)"/>
+		<s:Button id="tryPlay" width="168" label="试玩游戏" click="sdk_handle(event)"/>
+		<s:Button id="exitGame" width="205" label="退出游戏" click="sdk_handle(event)"/>
+		
+	</s:TileGroup>	
+	
+	<s:VGroup width="100%" height="436" horizontalAlign="right">
+		<s:TextArea id="infoTA" width="100%" height="420" color="#030715" textAlign="left"/>
+		<s:HGroup>
+		</s:HGroup>
+	</s:VGroup>
+</s:Application>

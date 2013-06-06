@@ -1,0 +1,1 @@
+"D:\FB\Adobe Flash Builder 4.6\sdks\AIR3.5\bin\adt"  -package -target apk-captive-runtime -storetype pkcs12 -keystore a.p12 -storepass 1234 360.apk androidQH360Sample-app.xml androidQH360Sample.swf  res 360AccountCenter.apk alipay_plugin.apk pro.jar -extdir .

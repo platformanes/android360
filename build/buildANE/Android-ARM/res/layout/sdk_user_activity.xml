@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/user_page"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sdk_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/uninitiated"
+                android:textColor="@color/demo_base_info" />
+
+            <TextView
+                android:id="@+id/channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/uninitiated"
+                android:textColor="@color/demo_base_info" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/nologin"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/env_self_check" />
+
+                <Button
+                    android:id="@+id/btn_self_check"
+                    style="@style/demo_btn"
+                    android:text="@string/self_check" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/get_out_sdk_info" />
+
+                <Button
+                    android:id="@+id/btn_get_out_sdk_info"
+                    style="@style/demo_btn"
+                    android:text="@string/get_info" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/fixed_pay" />
+
+                <Button
+                    android:id="@+id/btn_fixed_pay"
+                    style="@style/demo_btn"
+                    android:text="@string/fixed_pay" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/not_fixed_pay" />
+
+                <Button
+                    android:id="@+id/btn_not_fixed_pay"
+                    style="@style/demo_btn"
+                    android:text="@string/not_fixed_pay" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/switch_account_bg_transparent" />
+
+                <Button
+                    android:id="@+id/btn_switch_account_bg_transparent"
+                    style="@style/demo_btn"
+                    android:text="@string/switch_account" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/switch_account_bg_visible" />
+
+                <Button
+                    android:id="@+id/btn_switch_account"
+                    style="@style/demo_btn"
+                    android:text="@string/switch_account" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 实名注册和防沉迷 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/real_name_reg_bg_transparent_tip" />
+
+                <Button
+                    android:id="@+id/btn_real_name_register_bg_transparent"
+                    style="@style/demo_btn"
+                    android:text="@string/real_name_reg" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/real_name_reg_bg_visible_tip" />
+
+                <Button
+                    android:id="@+id/btn_real_name_register_bg_visible"
+                    style="@style/demo_btn"
+                    android:text="@string/real_name_reg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/anti_addiction_query" />
+
+                <Button
+                    android:id="@+id/btn_anti_addiction_query"
+                    style="@style/demo_btn"
+                    android:text="@string/anti_addiction_query" />
+            </LinearLayout>
+            
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/bbs_label" />
+
+                <Button
+                    android:id="@+id/btn_bbs"
+                    style="@style/demo_btn"
+                    android:text="@string/bbs_btn" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+            
+            <LinearLayout style="@style/demo_layout" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/quit_game" />
+
+                <Button
+                    android:id="@+id/btn_quit"
+                    style="@style/demo_btn"
+                    android:text="@string/quit" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

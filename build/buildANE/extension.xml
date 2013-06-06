@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://ns.adobe.com/air/extension/3.5">
+  <id>com.qh360.ane</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+  
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>qh360ane.jar</nativeLibrary>
+        <initializer>com.qh360.ane.Qh360Extension</initializer>
+        <finalizer>com.qh360.ane.Qh360Extension</finalizer>
+      </applicationDeployment>
+    </platform>
+    
+  </platforms>
+</extension>

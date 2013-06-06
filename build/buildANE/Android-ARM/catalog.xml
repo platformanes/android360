@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/qh360/ane/Qh360Events" mod="1368600548828" signatureChecksum="3873263787" >
+        <def id="com.qh360.ane:Qh360Events" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_86a34ad47b047dcab4d327d1787a739ad7c25bfe7239b6cec0cb165aeb0349ac_flash_display_Sprite" mod="1370518492203" signatureChecksum="2033155067" >
+        <def id="_86a34ad47b047dcab4d327d1787a739ad7c25bfe7239b6cec0cb165aeb0349ac_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="com/qh360/ane/Qh360Extension" mod="1370518486796" signatureChecksum="1841683582" >
+        <def id="com.qh360.ane:Qh360Extension" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="203b42b6cf5a62417cf0fce09c23a786d0c1b4da2c8b83db72fee2e9cfc62f39"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
