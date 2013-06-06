@@ -63,14 +63,14 @@ package com.qh360.ane
 		}
 		/**
 		 * 
-		 * @param fixedPay
-		 * @param notFixed
-		 * @param rate
-		 * @param productID
-		 * @param appUserID
-		 * @param serverNotifyURL
-		 * @param getTokenURL
-		 * @param getUserInfoURL
+		 * @param fixedPay 以分为单位。100分，即1元。fixedPay大于等于100时，即定额支付。
+		 * @param notFixed  为0分时，即不定额支付。
+		 * @param rate 人民币与游戏充值币的比例，例如2，代表1元人民币可以兑换2个游戏币，整数。
+		 * @param productID  购买商品的商品id，应用指定，最大16字符。
+		 * @param appUserID 应用内的用户id。 最大32字符
+		 * @param serverNotifyURL 应用服务器为360服务器提供的支付结果通知接口，由360服务器把支付结果通知到这个URI
+		 * @param getTokenURL 应用服务器为应用客户端提供的接口Url，用于通过AuthorizationCode获取TokenInfo
+		 * @param getUserInfoURL 应用服务器为应用客户端提供的接口Url，用于通过AccessToken获取QihooUserInfo
 		 * @return 
 		 * 
 		 */			
@@ -100,8 +100,8 @@ package com.qh360.ane
 		
 		/**
 		 * 
-		 * @param isLandScape
-		 * @param isBgTransparent
+		 * @param isLandScape  是否横屏
+		 * @param isBgTransparent  是否透明
 		 * @return 
 		 * 
 		 */			
@@ -112,11 +112,13 @@ package com.qh360.ane
 			return "call login failed";
 		} 
 		/**
-		 *付费发送函数 
-		 * @param key 暂时传什么都可以 留着以后可能要用
+		 * 
+		 * @param isVisible  是否透明
+		 * @param userName 游戏角色名
+		 * @param userID 游戏ID
 		 * @return 
 		 * 
-		 */		 
+		 */				 
 		public function Qh360Pay(isVisible:Boolean,userName:String,userID:String):String{
 			if(extContext ){
 				return extContext.call(QH360_FUNCTION_PAY,isVisible,userName,userID)as String;
@@ -131,7 +133,12 @@ package com.qh360.ane
 			}
 			return "call Qh360QuickPlay failed";
 		}
-		
+		/**
+		 * 
+		 * @param isVisible 是否透明模式
+		 * @return 
+		 * 
+		 */		
 		public function Qh360RealNameReg(isVisible:Boolean):String
 		{
 			if(extContext ){
@@ -139,7 +146,12 @@ package com.qh360.ane
 			}
 			return "call Qh360RealNameReg failed";
 		}
-		
+		/**
+		 * 
+		 * @param isVisible 是否透明模式
+		 * @return 
+		 * 
+		 */
 		public function Qh360SwitchAccount(isVisible:Boolean):String
 		{
 			if(extContext ){
@@ -147,7 +159,12 @@ package com.qh360.ane
 			}
 			return "call Qh360SwitchAccount failed";
 		}
-		
+		/**
+		 * 
+		 * @param isVisible 是否透明模式
+		 * @return 
+		 * 
+		 */
 		public function Qh360TryAccountReg(isVisible:Boolean):String
 		{
 			if(extContext ){
@@ -155,7 +172,12 @@ package com.qh360.ane
 			}
 			return "call Qh360TryAccountReg failed";
 		}
-		
+		/**
+		 * 
+		 * @param isVisible 是否透明模式
+		 * @return 
+		 * 
+		 */
 		public function Qh360TryPlay(isVisible:Boolean):String
 		{
 			if(extContext ){
