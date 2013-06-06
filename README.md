@@ -13,8 +13,9 @@
 * 官方文档 [360 for Android](http://dev.app.360.cn/dev/doc)
 
 ## 编译方法
-* 修改其中的 `pack_ane.bat ` 中的ADT路径为正确本机的路径
-* 运行 `pack_ane.bat`
+* 复制 `build/example.build.config` 为 `build/build.config`
+* 修改其中的 `flex.sdk` 和 `android.sdk` 变量为正确的路径
+* 运行 `ant android-ane`
 
 
 ## 作者
