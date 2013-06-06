@@ -30,35 +30,35 @@ package com.qh360.ane
 		 */
 		public static const QH360_PAY_STATUS : String = "Qh360Pay";
 		/**
-		 *防沉迷 
+		 * 防沉迷 
 		 */		
 		public static const  QH360_ANTI_STATUS:String = "Qh360AntiAddiction";
 		/**
-		 *论坛 
+		 * 论坛 
 		 */		
 		public static const  QH360_BBS_STATUS:String = "Qh360EnterBBS";
 		/**
-		 *退出游戏 
+		 * 退出游戏 
 		 */		
 		public static const  QH360_EXITGAME_STATUS:String = "Qh360ExitGame";
 		/**
-		 *快速游戏 
+		 * 快速游戏 
 		 */		
 		public static const  QH360_QUICKPLAY_STATUS:String = "Qh360QuickPlay";
 		/**
-		 *实名注册 
+		 * 实名注册 
 		 */		
 		public static const  QH360_REALNAME_STATUS:String = "Qh360RealNameReg";
 		/**
-		 *切换账号
+		 * 切换账号
 		 */		
 		public static const  QH360_SWITCH_STATUS:String = "Qh360SwitchAccount";
 		/**
-		 *试玩注册 
+		 * 试玩注册 
 		 */		
 		public static const  QH360_TRYACCOUNT_STATUS:String = "Qh360TryAccountReg";
 		/**
-		 *试玩
+		 * 试玩
 		 */		
 		public static const  QH360_TRYPLAY_STATUS:String = "Qh360TryPlay";
 		
