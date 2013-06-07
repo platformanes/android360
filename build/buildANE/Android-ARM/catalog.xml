@@ -10,18 +10,18 @@
   </features>
   <libraries>
     <library path="library.swf">
-      <script name="com/qh360/ane/Qh360Events" mod="1368600548828" signatureChecksum="3873263787" >
-        <def id="com.qh360.ane:Qh360Events" /> 
-        <dep id="AS3" type="n" /> 
-        <dep id="Object" type="i" /> 
-      </script>
-      <script name="_86a34ad47b047dcab4d327d1787a739ad7c25bfe7239b6cec0cb165aeb0349ac_flash_display_Sprite" mod="1370518492203" signatureChecksum="2033155067" >
-        <def id="_86a34ad47b047dcab4d327d1787a739ad7c25bfe7239b6cec0cb165aeb0349ac_flash_display_Sprite" /> 
+      <script name="_71a0c7946ef5d5f036daabaf60d42faa6fe39e9433ed60c7be88ee14c9c8e508_flash_display_Sprite" mod="1370569046984" signatureChecksum="4115627151" >
+        <def id="_71a0c7946ef5d5f036daabaf60d42faa6fe39e9433ed60c7be88ee14c9c8e508_flash_display_Sprite" /> 
         <dep id="flash.system:Security" type="e" /> 
         <dep id="AS3" type="n" /> 
         <dep id="flash.display:Sprite" type="i" /> 
       </script>
-      <script name="com/qh360/ane/Qh360Extension" mod="1370518486796" signatureChecksum="1841683582" >
+      <script name="com/qh360/ane/Qh360Events" mod="1370569010531" signatureChecksum="3897345261" >
+        <def id="com.qh360.ane:Qh360Events" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/qh360/ane/Qh360Extension" mod="1370569010843" signatureChecksum="1841683582" >
         <def id="com.qh360.ane:Qh360Extension" /> 
         <dep id="flash.events:StatusEvent" type="e" /> 
         <dep id="flash.external:ExtensionContext" type="e" /> 
@@ -32,7 +32,7 @@
         <dep id="flash.events:EventDispatcher" type="i" /> 
       </script>
       <digests>
-        <digest type="SHA-256" signed="false" value="203b42b6cf5a62417cf0fce09c23a786d0c1b4da2c8b83db72fee2e9cfc62f39"   />
+        <digest type="SHA-256" signed="false" value="666910596510c968fbabe892613c50c187a49dd152859ff54ed8396cb9421f4a"   />
       </digests>
     </library>
   </libraries>
