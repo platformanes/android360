@@ -11,6 +11,7 @@
 ## 资源
 
 * 官方文档 [360 for Android](http://dev.app.360.cn/dev/doc)
+*  官方未找到下载地址
 
 ## 编译方法
 * 复制 `build/example.build.config` 为 `build/build.config`
