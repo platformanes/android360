@@ -14,9 +14,9 @@
 *  官方未找到下载地址
 
 ## 编译方法
-* 复制 `build/example.build.config` 为 `build/build.config`
-* 修改其中的 `flex.sdk` 和 `android.sdk` 变量为正确的路径
-* 运行 `ant android-ane`
+*  A复制 SDK的JAR到`build/makeJar` ，运行`combine.bat `合并jar
+*  B 复制A中得到的jar到`build/buildANE/Android-ARM`，运行`ane_packer.bat`得到ANE
+*  C 复制B中得到的ANE到 `bulidAPK` 并修改配置 运行`360_apk.bat`可生成APK
 
 
 ## 作者
